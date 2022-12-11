@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: spring-boot-k8s
-        image: kubernetes:0.0.2-SNAPSHOT # Image that will be used to containers in the cluster
+        image: ricardosanfelice/kubernetes_app # Image that will be used to containers in the cluster
         resources:
           limits:
             cpu: 300m

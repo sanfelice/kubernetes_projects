@@ -5,7 +5,7 @@ resources:
   - ../base
 
 images:
-- name: kubernetes
+- name: ricardosanfelice/kubernetes_app
   newTag: 0.0.2-SNAPSHOT
 
 replicas:

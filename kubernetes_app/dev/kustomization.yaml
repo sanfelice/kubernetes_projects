@@ -10,7 +10,7 @@ images:
 
 replicas:
 - count: 1
-  name: kubernetes_app
+  name: spring-boot-k8s
 
 patchesStrategicMerge:
   - deployment-patch.yaml

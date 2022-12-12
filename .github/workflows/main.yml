@@ -3,14 +3,8 @@ on:
   workflow_dispatch:
     inputs:
       app:
-        description: 'Application path'
+        description: 'Application name'
         required: true
-        default: 'warning'
-        type: choice
-        options:
-        - info
-        - warning
-        - debug
       image:
         description: 'Image to deploy'
         required: true        

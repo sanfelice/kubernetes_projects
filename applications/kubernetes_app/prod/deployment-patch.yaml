@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment # Kubernetes resource kind we are creating
 metadata:
   name: spring-boot-k8s
-  namespace: dev
 spec:
   template:
     spec:
@@ -10,4 +9,4 @@ spec:
       - name: spring-boot-k8s
         env:
           - name: ENV_NAME
-            value: "DEVELOPMENT"
+            value: "PRODUCTION"

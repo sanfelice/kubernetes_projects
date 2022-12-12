@@ -14,14 +14,14 @@ spec:
     spec:
       containers:
       - name: spring-boot-k8s
-        image: kubernetes:0.0.2-SNAPSHOT # Image that will be used to containers in the cluster
-        resources:
-          limits:
-            cpu: 300m
-            memory: 400m
-          request:
-            cpu: 150m
-            memory: 200m
+        image: ricardosanfelice/kubernetes_app # Image that will be used to containers in the cluster
+        # resources:
+        #   limits:
+        #     cpu: 300m
+        #     memory: 300Mi
+        #   request:
+        #     cpu: 150m
+        #     memory: 200Mi
         # imagePullPolicy: IfNotPresent
         ports:
           - containerPort: 8080 # The port that the container is running on in the cluster

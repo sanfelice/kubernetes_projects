@@ -6,7 +6,7 @@ resources:
 
 images:
 - name: ricardosanfelice/kubernetes_app
-  newTag: master_
+  newTag: master_76486dfc89c8c12c4d23b0ea50149fce3a4f2395
 
 replicas:
 - count: 1

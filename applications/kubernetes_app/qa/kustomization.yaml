@@ -7,6 +7,8 @@ resources:
 images:
 - name: kubernetes
   newTag: 0.0.2-SNAPSHOT
+- name: ricardosanfelice/kubernetes_app
+  newTag: 0.0.1-SNAPSHOT
 
 replicas:
 - count: 1

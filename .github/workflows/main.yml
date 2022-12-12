@@ -29,6 +29,8 @@ jobs:
         run: |
           cd "applications/${{ inputs.app }}/${{ inputs.environment }}"
           kustomize edit set image ${{ inputs.image }}
+          git config --global user.email "bot@pipeline.com"
+          git config --global user.name "Workflow"
           git add .
           git commit -m "Set ${{ inputs.app }} image tag to ${{ inputs.image }} in ${{ inputs.environment }} environment"
           git push

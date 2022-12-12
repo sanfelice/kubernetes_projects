@@ -25,10 +25,10 @@ jobs:
         uses: actions/checkout@v3
       - name: Setup Kustomize
         uses: imranismail/setup-kustomize@v2
-      - name: Update tag
+      - name: Update image
         run: |
           cd "applications/${{ inputs.app }}/${{ inputs.environment }}"
-          kustomize edit set image ${{ inputs.tag }}
+          kustomize edit set image ${{ inputs.image }}
           git add .
-          git commit -m "Set `${{ inputs.app }}` image tag to `${{ inputs.tag }}` in `${{ inputs.environment }}` environment"
+          git commit -m "Set `${{ inputs.app }}` image tag to `${{ inputs.image }}` in `${{ inputs.environment }}` environment"
           git push

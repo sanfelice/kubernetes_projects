@@ -9,7 +9,7 @@ images:
   newTag: master_b09c4b73fbe400f4ae945ecd3245882633d3c27c
 
 replicas:
-- count: 1
+- count: 2
   name: spring-boot-k8s
 
 patchesStrategicMerge:
